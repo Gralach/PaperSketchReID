@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}
+
+\bibitem{cit:2}
+``Data investigasi kecelakaan perkeretaapian tahun 2010-2016.''
+\newblock Terakhir diakses pada tanggal 27 April 2018.
+
+\bibitem{cit:1}
+``Lalu lintas dan angkutan jalan nomor 22 tahun 2009.''
+\newblock Terakhir diakses pada tanggal 27 April 2018.
+
+\bibitem{cit:4}
+``Deteksi keselamatan perjalanan kereta api.''
+\url{https://travel.kompas.com/read/2010/09/02/03165727/Deteksi.Keselamatan.Perjalanan.Kereta}.
+\newblock Terakhir diakses pada tanggal 3 Juli 2018.
+
+\bibitem{cit:3}
+I.~Karyadi, ``Studi kemungkinan penggunaan mikroprosesor untuk meenetapkan
+  kecepatan maksimum kereta api yang dijinkan berdasarkan kondisi track,''
+  graduate's thesis, Institut Teknologi Bandung, Januari 1986.
+  
+\bibitem{cit:15}
+M.~Subyanto, {\em Dinamika Kendaraan Rel}.
+\newblock Bandung: CV Komala, 1982.
+
+\bibitem{cit:5}
+``Datasheet digital accelerometer adxl345.''
+  \url{http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf}.
+\newblock Terakhir diakses pada tanggal 28 April 2018.
+
+\bibitem{cit:9}
+``Using an accelerometer for inclination sensing.''
+\url{http://www.analog.com/media/en/technical-documentation/application-notes/AN-1057.pdf}.
+\newblock Terakhir diakses pada tanggal 28 April 2018.
+
+\bibitem{cit:21}
+``How to calibrate adxl345 triple axis accelerometer.''
+\url{http://wei48221.blogspot.com/2015/07/how-to-calibrate-adxl345-triple-axis_43.html}.
+\newblock Terakhir diakses pada tanggal 4 Juni 2018.
+
+\bibitem{cit:6}
+``Adafruit ultimate gps breakout - 66 channel w/10 hz updates - version 3.''
+\url{https://cdn-learn.adafruit.com/downloads/pdf/adafruit-ultimate-gps.pdf}.
+\newblock Terakhir diakses pada tanggal 28 April 2018.
+
+\bibitem{cit:10}
+``Gps technologies and alternatives.''
+\url{https://www.rand.org/content/dam/rand/pubs/monograph_reports/MR614/MR614.appa.pdf}.
+\newblock Terakhir diakses pada tanggal 28 April 2018.
+
+\bibitem{cit:11}
+``National marine electronics association (nmea)-0183 tipe rmc.''
+\url{http://infocomputerscience.blogspot.co.id/2011/03/national-marine-electronics-association.html}.
+\newblock Terakhir diakses pada tanggal 28 April 2018.
+
+\bibitem{cit:12}
+``Raspberry pi pinout diagram circuit notes..''
+\url{www.jameco.com/Jameco/workshop/circuitnotes/raspberry-pi-circuit-note.html}.
+\newblock Terakhir diakses pada tanggal 20 April 2018.
+
+\bibitem{cit:13}
+``Raspberry pi 3 is out now! specs, benchmarks and more..''
+\url{https://www.raspberrypi.org/magpi/raspberry-pi-3-specs-benchmarks/}.
+\newblock Terakhir diakses pada tanggal 20 April 2018.
+
+\bibitem{cit:20}
+``Mysqldb users guide.''
+\url{http://mysqlclient.readthedocs.io/user_guide.html\#introduction}.
+\newblock Terakhir diakses pada tanggal 20 Mei 2018.
+
+\bibitem{cit:14}
+``V. beal, what is cloud storage?.''
+  \url{https://www.webopedia.com/TERM/C/cloud_storage.html}.
+\newblock Terakhir diakses pada tanggal 20 April 2018.
+
+\end{thebibliography}

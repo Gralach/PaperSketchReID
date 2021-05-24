@@ -1,0 +1,47 @@
+\chapter{PENUTUP}
+\vspace{1ex}
+
+\section{Kesimpulan}
+\vspace{1ex}
+
+Dari hasil pengujian yang sudah dilakukan dapat ditarik beberapa kesimpulan sebagai berikut:
+\vspace{1ex}
+
+\begin{enumerate}[nolistsep]
+
+\item Tombol - tombol jumlah lajur pada \textit{Interface - Main Menu} telah berkorelasi dengan benar terhadap \textit{scene} yang dimuat
+\item Pengujian pengambilan data kecepatan menghasilkan data berdasarkan kalkulasi vektor global, diperlukan pengujian untuk memverifikasi keakuratan data tersebut.
+\item Pengujian pengambilan data spasial menghasilkan data relatif posisi mobil terhadap garis pinggir jalan, dapat disimpulkan data tersebut dapat digunakan untuk suplemen data pengujian pengambilan data \textit{response time}, diperlukan pengujian untuk memverifikasi keakuratan data tersebut 
+\item Pengujian citra webcam memiliki \textit{performance cost} yang sangat tinggi, yaitu \textit{execution time} tiap framenya mencapai 250-550 milisekon, hal ini disebabkan oleh proses unity dalam melakukan \textit{encoding} data berupa \textit{texture} menjadi suatu citra. Permasalahan ini ada pada level perangkat keras (GPU dan CPU). Diperlukannya suatu kompromi antara \textit{performance} dan akurasi
+\item Proses kalkulasi data serta berjalannya \textit{script} utama pada \textit{unity} tidak terlalu berpengaruh terhadap respon \textit{steering wheel}, nilai error mendekati 0 persen atau akurat hingga 5 angka dibelakang koma (0.000001\%)(gambar \ref{fig:4.8}) hal ini disebabkan oleh kecilnya \textit{performance cost} dari \textit{script} tersebut (20-100 milisekon).
+\item Pengujian UX tidak konklusif, yang disebabkan oleh situasi dan kondisi pandemi \textit{COVID-19}. Diperlukannya pengujian UX dengan jumlah responden yang lebih banyak sehingga dapat mewakili target demografi pengguna yang dituju.
+
+\end{enumerate}
+\vspace{1ex}
+
+\section{Saran}
+\vspace{1ex}
+
+Untuk pengembangan penelitian selanjutnya terdapat beberapa saran sebagai berikut :
+\vspace{1ex}
+
+\begin{enumerate}[nolistsep]
+	
+	\item Melakukan \textit{refactor} / penataan ulang terhadap struktur source code.
+	\vspace{1ex}
+	
+	\item Mengurangi \textit{performance cost} dari source code.
+	\vspace{1ex}
+	
+	\item Meningkatkan estetik dari simulator mulai dari UI, kualitas objek 3D, serta animasi - animasi atau detail - detail  lain yang dapat meningkatkan imersifitas dari simulator.
+	
+	\item Menambah kapabilitas dari simulator dengan menambah jenis data yang bisa diambil oleh simulator.
+	\vspace{1ex}
+
+    \item Melakukan survey terhadap pengguna untuk fitur yang perlu ditambahkan pada simulator ini
+	\vspace{1ex}
+	
+	\item Melakukan survey kuesioner dengan jumlah responden yang lebih banyak agar mewakili target demografi pengguna yang dituju
+	\vspace{1ex}
+
+\end{enumerate}

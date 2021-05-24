@@ -1,0 +1,248 @@
+\documentclass[a5paper, 10pt, twoside, bahasa]{report}
+\title{Tugas Akhir - Reidentifikasi Multi-Modal}
+\usepackage{graphicx}
+\usepackage{hyphenat}
+\usepackage{comment}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage[ruled,lined,commentsnumbered,linesnumbered]{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage{makeidx}
+\makeindex
+\usepackage[pdfauthor={Charles Chang},bookmarksnumbered,pdfborder={0 0 0}]{hyperref}  
+\usepackage[indonesian]{babel}
+\usepackage{epsfig}
+\usepackage{subfig}
+\usepackage[top=25mm,left=25mm,right=20mm,bottom=25mm]{geometry}
+\usepackage{pdflscape}
+\usepackage{setspace}  
+\usepackage{type1cm}
+\usepackage{lettrine}
+\usepackage{hyperref}
+\usepackage[pageref]{backref}
+\usepackage{multirow}
+\usepackage{fancyhdr} 		% Untuk pengaturan header dan footer yang lebih kompleks
+\usepackage{etoolbox} 		% Untuk melakukan perubahan (patch) command internal LaTeX
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{float}
+\floatstyle{boxed}
+\newfloat{program}{thp}{lop}
+\floatname{program}{Program}
+\usepackage[fleqn]{amsmath}
+\usepackage{enumitem}
+\usepackage{nonfloat}
+\usepackage{ulem}
+\usepackage[final]{pdfpages}
+\usepackage [raggedright]{titlesec}
+
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{wrapfig}
+
+% Caption label bold
+\usepackage[labelfont=bf]{caption}
+\captionsetup{labelfont=bf}
+
+% Jarak caption dengan obyek
+\captionsetup[figure]{font=small,skip=5pt}
+\captionsetup[table]{font=small,skip=5pt}
+\captionsetup[lstlisting]{font=small,skip=5pt}
+
+% Caption nama
+\renewcommand{\figurename}{Gambar}
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\lstlistingname}{Kode}
+
+% Buat source code
+\usepackage{courier}
+\lstset{
+	% language=C++, 						% Bahasa pengrograman yang digunakan
+	basicstyle=\ttfamily \footnotesize,	% Jenis font dalam listing & Ukuran font
+	% numbers=left, 						% Posisi angka untuk line-number
+	% numberstyle=\footnotesize, 		% Ukuran angka untuk line-numbers
+	% stepnumber=1, 						% Jarak setiap line-numbers
+	% numbersep=5pt, 					% Ukuran line-numbers
+	backgroundcolor=\color{white}, 		% Warna background. Gunakan \usepackage{color} dulu
+	showspaces=false, 					% Show spaces adding particular underscores
+	showstringspaces=false, 				% Underline spaces within strings
+	showtabs=false, 						% Show tabs within strings adding particular underscores
+	frame=single, 						% Tambahkan Frame
+	framesep=0.1pt,						% Jarak frame dengan list content keseluruhan
+	framexbottommargin=4pt,				% Jarak frame dengan list content bawah
+  	framextopmargin=4pt,					% Jarak frame dengan list content atas
+  	framexleftmargin=0pt,				% Jarak frame dengan list content kiri
+  	framexrightmargin=0pt,				% Jarak frame dengan list content kanan
+	tabsize=2, 							% Sets default tabsize to 2 spaces
+	captionpos=b,						% Posisi caption
+	breaklines=true, 					% Line breaking
+	breakatwhitespace=false, 			% Sets if automatic breaks should only happen at whitespace
+	escapeinside={\%*}{*)}				% if you want to add a comment within your code
+}
+
+% Untuk cek nomor halaman
+\usepackage{changepage}
+\usepackage{graphicx}
+
+%Untuk check mark dan x-mark
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\usepackage{lipsum}
+\hyphenation{meng-gerak-kan mem-per-kenal-kan me-nger-ja-kan sa-ran seg-men be-ru-pa rasp-ber-ry meng-hu-bun-kan ter-sim-pan smart-phone me-nya-ma-kan sin-kro-ni-sa-si ke-ce-pa-tan di-hu-bung-kan sam-bu-ngan me-ru-pa-kan meng-gu-na-kan ber-da-sar-kan di-la-ku-kan di-gu-na-kan di-ban-ding-kan}
+
+% Definisi untuk "halaman sengaja dikosongkan"
+\def\kosong{
+  \vspace*{\fill}
+  \begin{center}\textit{Halaman ini sengaja dikosongkan}\end{center}
+  \vfill
+}
+\patchcmd{\cleardoublepage}{\hbox{}}{\kosong}{}{}
+
+% Tambahkan PDF atau Gambar
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+   \pdffalse
+\else
+   \pdfoutput=1
+   \pdftrue
+\fi
+\ifpdf
+   \usepackage{graphicx}
+   \usepackage{epstopdf}
+   \DeclareGraphicsRule{.eps}{pdf}{.pdf}{`epstopdf #1}
+   \pdfcompresslevel=9
+\else
+   \usepackage{graphicx}
+\fi
+
+% utk itemize yg lebih rapat
+\newenvironment{packed_enum}{
+\begin{enumerate}[nolistsep]
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+
+% Untuk citation
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+\renewcommand*{\backreflastsep}{, }
+\renewcommand*{\backreftwosep}{, }
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{
+  \ifcase #1
+    No citations.
+  \or
+    (Dikutip pada halaman #2).
+  \else
+    (Dikutip pada halaman #2).
+  \fi
+}
+
+% Pengaturan penomoran halaman menggunakan package fancyhdr
+\fancyhf{} 								% Mengosongkan header dan footer
+\renewcommand{\headrulewidth}{0pt} 		% Menghapus garis horizontal pada header
+\pagestyle{fancy} 						% Mengubah pagestyle dokumen menjadi fancy
+\fancyfoot[CE,CO]{\thepage}				% Footer kanan pada hal. ganjil dan sebaliknya
+\patchcmd{\chapter}{plain}{fancy}{}{} 	% Mengubah pagestyle pada chapter menjadi fancy
+\patchcmd{\chapter}{empty}{plain}{}{}
+
+% Pengaturan format Chapter dan Section
+\titleformat{\chapter}[display]{\bfseries\Large}{BAB \centering\thechapter}{0ex}{\vspace{0ex}\centering}[\vspace{0ex}]
+\titleformat{\section}{\bfseries\large}{\MakeUppercase{\thesection}}{1ex}{}
+\titlespacing*{\chapter}{0pt}{-4ex}{0pt}
+\titlespacing{\section}{0pt}{0pt}{0pt}
+
+\begin{document}
+\pagenumbering{roman}
+\singlespacing
+\includepdf[pages=-, offset=0 0]{file/COVER-BUKU.pdf}
+\includepdf[pages=-, offset=0 0]{file/Pengesahan.pdf}
+
+
+% Abstrak bahasa indonesia
+\addcontentsline{toc}{chapter}{Abstrak}
+\input{lainnya/Abstrak.tex}
+\cleardoublepage
+
+% Abstrak bahasa ingris
+%\addcontentsline{toc}{chapter}{Abstract}
+%\input{lainnya/Abstract.tex}
+%\cleardoublepage
+
+% Kata pengantar
+\addcontentsline{toc}{chapter}{KATA PENGANTAR} % kata pengantar
+\input{lainnya/katapengantar}
+\cleardoublepage
+
+% Daftar isi
+\renewcommand*\contentsname{DAFTAR ISI}
+\addcontentsline{toc}{chapter}{\contentsname}
+\titlespacing*{\chapter}{0pt}{-4ex}{2ex}
+\tableofcontents	
+\cleardoublepage
+
+% Daftar gambar
+\renewcommand*\listfigurename{DAFTAR GAMBAR}
+\addcontentsline{toc}{chapter}{\listfigurename}
+\titlespacing*{\chapter}{0pt}{-4ex}{2ex}
+\listoffigures
+\cleardoublepage
+
+% Daftar tabel
+\renewcommand*\listtablename{DAFTAR TABEL}
+\addcontentsline{toc}{chapter}{\listtablename}
+\titlespacing*{\chapter}{0pt}{-4ex}{2ex}
+\listoftables
+\cleardoublepage
+
+% Nomenklatur
+\addcontentsline{toc}{chapter}{NOMENKLATUR}
+\input{numenklatur.tex}
+\cleardoublepage
+
+% BAB isi buku
+\titleformat{\chapter}[display]{\bfseries\Large}{BAB \centering\thechapter}{0ex}{\vspace{0ex}\centering}[\vspace{0ex}]
+\titleformat{\section}{\bfseries\large}{\MakeUppercase{\thesection}}{1ex}{}
+\titleformat{\subsection}{\bfseries\large}{\MakeUppercase{\thesubsection}}{1ex}{}
+\titleformat{\subsubsection}{\bfseries\large}{\MakeUppercase{\thesubsubsection}}{1ex}{}
+\titlespacing*{\chapter}{0pt}{-4ex}{0pt}
+\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\subsection}{0pt}{0pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+
+% Indent paragraph
+\setlength{\parindent}{0.8cm}
+
+% Penambahan halaman kosong otomatis
+\input{bab1}
+\cleardoublepage
+\input{bab2}
+\cleardoublepage
+\input{bab3}
+\cleardoublepage
+\input{bab4}
+\cleardoublepage
+\input{bab5}
+\cleardoublepage
+
+% Daftar pustaka
+\renewcommand*\bibname{DAFTAR PUSTAKA}
+\addcontentsline{toc}{chapter}{\bibname}
+\titlespacing*{\chapter}{0pt}{-4ex}{2ex}
+\appendix
+\bibliographystyle{ieeetr}
+\bibliography{TA}
+\cleardoublepage
+
+% Biografi penulis
+\input{lainnya/Biografi.tex}
+\addcontentsline{toc}{chapter}{Biografi Penulis}
+\cleardoublepage
+
+\end{document}

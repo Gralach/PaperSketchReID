@@ -1,0 +1,18 @@
+\section{HSV Color Space}
+\vspace{1ex}
+
+HSV \textit{color space} merupakan salah satu jenis ruang warna yang mendefinisikan warna dalam bentuk \textit{Hue}, \textit{Saturation} dan \textit{Value}. \textit{Hue} didefinisikan untuk warna yang sebenarnya, contohnya warna tingkat warna kekuningan dan kehijauan. \textit{Saturation} diartikan sebagai kekuatan warna. Sedangkan \textit{value} merupakan tingkat kecerahan suatu warna. Salah satu keuntungan dari HSV \textit{color space} yakni warnanya seperti apa yang dilihat oleh mata manusia.
+\vspace{1ex}
+
+
+\section{Image Cropping}
+\vspace{1ex}
+
+\textit{Image cropping} adalah cara memotong sebagian daerah pada sebuah citra untuk membuang bagian yang tidak diinginkan. Selain itu, \textit{image processing} yang berlangsung menjadi lebih ringan karena tidak semua bagian citra terproses. Pada tugas akhir ini, digunakan metode \textit{image cropping} berdasarkan warna penanda atau \textit{marker} untuk menyeleksi bagian jalan yang akan digunakan untuk proses \textit{background reconstruction} dan \textit{background substraction}.
+\vspace{1ex}
+
+Citra masukan yang dihasilkan dari kamera berbasis pesawat tanpa awak memiliki format \textit{RGB color space}. Format tersebut terlebih dahulu dikonversikan menjadi \textit{HSV color space}. Warna pada penanda dideteksi dengan menyesuaikan nilai warna penanda sehingga penanda terseleksi dari warna lain pada citra. Penanda yang terseleksi minimum tiga buah selanjutnya digunakan sebagai acuan dalam proses pemotongan pada suatu citra yang berbentuk persegi.    
+\vspace{1ex}
+
+Penanda yang memiliki warna merah dideteksi sehingga pada citra hanya didapatkan obyek yang memiliki warna merah saja. Hasil proses deteksi warna memiliki masih memiliki \textit{noise} dari objek yang memiliki warna yang sama dengan penanda. Dilakukan proses erosi dan dilasi terhadap citra tersebut untuk mengeliminasi objek terdeteksi yang tidak diinginkan. Pendeteksian kontur pada penanda digunakan untuk mendapatkan koordinat terluar dari penanda. Jumlah yang dibutuhkan ialah tiga objek untuk membentuk bidang persegi pada citra.
+\vspace{1ex}  

@@ -1,0 +1,7 @@
+﻿user interface pada laporan nilai indek rel sudah dapat menapilkan warna pada marker (hijau, kuning, jingga, dan merah) sesuai dengan parameter nilai indek rel kereta api yang telah ditetapkan. 
+
+User interface pada sensor node sudah dapat menjalankan menu (pengaturan gps, pengaturan akselerometer, penambahan id, akusisi sensor, dan pengiriman data) sesuai dengan fungsi masing-masing menu dan dapat memvisualisasikan nilai getaran dan kecepatan kereta secara aktual ke grafik.
+
+Tingkat akurasi masing-masing sensor jika dilihat dari nilai galat pada sensor GPS dalam menentukan lokasi sebesar 3,7 meter dan menentukan kecepatan sebesar 7,8% dan sensor akselerometer sebesar 0,059G.
+
+Proses transmisi data oleh sensor node menuju database server mengalami interval waktu rata-rata sebesar 1,04 detik. 

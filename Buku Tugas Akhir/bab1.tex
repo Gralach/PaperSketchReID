@@ -1,0 +1,113 @@
+\chapter{PENDAHULUAN}
+\pagenumbering{arabic}
+\vspace{1ex}
+
+\section*{}
+Penelitian ini di latar belakangi oleh berbagai kondisi yang menjadi acuan. Selain itu juga terdapat beberapa permasalahan yang akan dijawab sebagai luaran dari penelitian.
+\vspace{1ex}
+
+\section{Latar belakang}
+\vspace{1ex}
+
+Saat ini teknologi telah berkembang pesat sehingga penggunaan kamera pengawasan atau \textit{CCTV} sudah umum dipakai. Hasil rekaman dari kamera ini  merupakan informasi visual yang sangat vital dan dapat berperan sebagai saksi terjadinya tindakan kriminal. Hasil rekaman ini mempunyai peran penting dalam memberikan bukti di investigasi kriminal dan perselisihan.  
+\vspace{1ex}
+
+Pada tahun 2021 ini, Indonesia merupakan negara dengan jumlah penduduk terpadat ke-4 di dunia, dimana pada DKI Jakarta sendiri terdapat 10.4 juta penduduk, yaitu sekitar 333\% lebih banyak dibanding Surabaya \cite{cit:1, cit:2}. Dari data yang diambil dari Badan Pusat Statistik, Polda Metro Jaya mencatat jumlah kejahatan terbanyak yaitu 31.934 kejadian, dan pada tahun 2020 ini terlihat trend adanya peningkatan tindak kriminal di seluruh Indonesia \cite{cit:3, cit:4, cit:5, cit:6}. Fakta – fakta inilah yang mendorong riset – riset mengenai pengurangan angka kriminalitas dengan berbagai macam cara, dibutuhkan adanya otomasi yang dapat mengurangi biaya dan beban kerja pihak kepolisian.
+\vspace{1ex} 
+ 
+Re-identifikasi manusia merupakan sebuah teknik visi komputer dan deep learning dimana pada sebuah lingkungan yang terdapat beberapa kamera pengawas dilakukan adanya pencocokan citra seseorang, kepada citra yang ditangkap pada kamera lain. Masalah utama yang ditangani oleh Re-identifikasi manusia dapat disimpulkan sebagai cara untuk mencari representasi diskriminatif milik individu yang ingin dicari. Dengan membuat sistem re-identifikasi manusia, pemeriksaan hasil rekaman yang dilakukan oleh pihak kepolisian dapat dilakukan dengan jauh lebih cepat, dan dapat menekan biaya yang digunakan untuk membayar tenaga kerja. Tidak hanya  untuk melakukan pencarian pelaku tindak kriminal, re-identifikasi dapat digunakan juga untuk melihat apakah barang yang tertinggal pada suatu lokasi diambil individu yang sama, dan dapat membantu pihak sekuriti mencari orang yang hilang. Re-identifikasi manusia dapat mempermudah aktivitas - aktivitas yang sebelumnya dilakukan secara manual, maka dari itu pencarian individu sangat dibutuhkan dengan menggunakan teknologi \textit{machine learning} untuk mempercepat proses yang sebelumnya memakan waktu yang sangat lama.
+\vspace{1ex} 
+
+\section{Permasalahan}
+\vspace{1ex}
+Berdasarkan data yang telah dipaparkan di latar belakang, dapat dirumuskan beberapa rumusan masalah sebagai berikut:
+\begin{enumerate}
+	\vspace{-1.3mm}
+	\item Indonesia merupakan negara dengan penduduk ke-empat terbanyak di dunia sehingga pencarian pelaku tindak kriminal diantara penduduk sipil sulit untuk dilakukan.
+	\vspace{-2mm}
+	\item Data hasil rekaman kamera masih diperiksa secara manual oleh pihak kepolisian sehingga waktu dan ketepatan pencarian masih tidak optimal.
+\end{enumerate}
+
+\section{Tujuan}
+\vspace{1ex}
+
+Adapun tujuan dari penelitian Tugas Akhir ini adalah mengembangkan model re-identifikasi orang menggunakan \textit{Lightweight Convolutional Neural Network} untuk mengindentifikasi ulang seseorang yang tertangkap pada beberapa \textit{CCTV} berbeda dengan menggunakan sketsa dari beberapa seniman sebagai input.
+
+\vspace{1ex}
+
+\section{Batasan masalah}
+\vspace{1ex}
+Batasan masalah yang timbul dari permasalahan Tugas Akhir ini adalah:
+\vspace{1ex}
+\begin{enumerate}
+	\vspace{-2mm}
+	\item Data \textit{training} dan \textit{testing} menggunakan data yang diambil dari PKU SketchRe-ID Dataset.
+	\vspace{-2mm}
+	\item Jenis re-identifikasi orang yang akan dilakukan adalah \textit{Closed Set} dan \textit{Short Term}.
+	\vspace{-2mm}
+	\item Training akan dilakukan menggunakan \textit{Lightweight Convolutional Neural Network}
+\end{enumerate}
+\vspace{1ex}
+
+\section{Sistematika Penulisan}
+\vspace{1ex}
+Laporan penelitian Tugas Akhir ini disusun dalam sistematika yang terstruktur, sehingga mudah dipahami dan dipelajari oleh pembaca maupun seseorang yang ingin melanjutkan penelitian ini. Alur sistematika penulisan laporan penelitian ini yaitu sebagai berikut:
+\vspace{1ex}
+
+\begin{enumerate}[nolistsep]
+	\item BAB I Pendahuluan
+
+	Bab ini berisi uraian tentang latar belakang permasalahan, penegasan dan alasan pemilihan judul, sistematika laporan, tujuan dan metodologi penelitian.
+	\vspace{1ex}
+
+	\item BAB II Dasar Teori
+
+	Bab ini berisi tentang uraian secara sistematis teori-teori yang berhubungan dengan permasalahan yang dibahas pada penelitian ini. Teori-teori ini digunakan sebagai dasar dalam penelitian, yaitu sistem simulator dan pengambilan data variabel - variabel uji.
+	\vspace{1ex}
+
+	\item BAB III Perancangan Sistem dan Impementasi
+
+	Bab ini berisi tentang penjelasan-penjelasan terkait eksperimen yang akan dilakukan dan langkah-langkah pengolahan data hingga menghasilkan visualisasi. Guna mendukung eksperimen pada penelitian ini, digunakanlah blok diagram atau \textit{work flow} agar penjelasan sistem yang akan dibuat dapat terlihat dan mudah dibaca untuk implementasi pada pelaksanaan tugas akhir.
+	\vspace{1ex}
+
+	\item BAB IV Pengujian dan Analisa
+
+	Bab ini menjelaskan tentang pengujian eksperimen yang dilakukan terhadap data dan analisanya. Beberapa teknik visualisasi akan ditunjukan hasilnya pada bab ini dan dilakukan analisa terhadap hasil visualisasi dan informasi yang didapat dari hasil mengamati visualisasi yang tersaji
+	\vspace{1ex}
+
+	\item BAB V Penutup
+
+	Bab ini merupakan penutup yang berisi kesimpulan yang diambil dari penelitian dan pengujian yang telah dilakukan. Saran dan kritik yang membangun untuk pengembangkan lebih lanjut juga dituliskan pada bab ini.
+\end{enumerate}
+\vspace{1ex}
+
+\section{Relevansi}
+\begin{enumerate}
+    \item Lightweight Residual Network for Person Re-Identification (Reza Fuad Rachmadi, Supeno Mardi Nugroho, I Ketut Eddy Purnama) \cite{cit:14}
+    \par
+	\textit{Lightweight Residual Network for Person Re-Identification} ini merupakan sebuah implementasi \textit{lightweight CNN} untuk melakukan re-Identifikasi manusia, lightweight CNN yang digunakan berbasis \textit{Residual Network} dengan menggunakan pre trained weights yang pernah  digunakan untuk memecahkan masalah klasifikasi CIFAR-10. Lightweight network dibuat dengan membuat \textit{ensemble} dari beberapa Residual Network lemah yang ada menghasilkan sebuah model yang lebih kuat. Berdasarkan hasil dari riset yang dilakukan, meskipun lightweight CNN tidak mendapatkan akurasi tercanggih dibandingkan model-model lainnya, banyak nya informasi yang didapatkan oleh model ini sangat tinggi, dan dapat dikatakan model ini lebih efisien dari model-model lainnya.
+    \vspace{1ex}
+    
+    \item Torchreid: A Library for Deep Learning Person Re-Identification in Pytorch. (Kaiyang Zhou, Tao Xiang). \cite{cit:16}
+    \par
+	 Torchreid merupakan sebuah \textit{library deep learning} yang dibuat oleh Kaiyang Zhou untuk mempercepat implementasi dan percobaan re-identifikasi. Library ini secara umum dibuat dengan menggunakan bahasa Python dengan beberapa kode berbasis Cython untuk optimisasi. Pada library ini dataset sudah di \textit{preprocess} dan di implementasi sesuai dengan protokol evaluasi masing masing dataset sehingga dapat dibandingkan dengan penelitian lain yang terkait.
+    \vspace{1ex}
+    
+    \item Adaptive L2 Regularization in Person Re-Identification. (Xingyang Ni, Liang Fang, Heikki Huttunen) \cite{cit:17}
+    \par
+    
+    \textit{Adaptive L2 Regularization in Person Re-Identication} merupakan sebuah penelitian untuk menambahkan regularisasi L2, dimana faktor regularisasi dapat berubah ubah secara adaptif pada \textit{baseline} model. Dari hasil penelitan yang dilakukan regularisasi L2 secara adaptif dapat meningkatkan akurasi model sekitar 1 hingga 2\% untuk \textit{dataset} Market-1501, DukeMTMC dan MSMT17.
+    \vspace{1ex}
+    
+    \item Cross-Domain Adversarial Feature Learning for Sketch
+    Re-identification. (Lu Pang, Yaowei Wang, Yi-Zhe Song, Tiejun Huang, Yonghong Tian) \cite{cit:12}
+    \par
+    
+    \textit{Cross-Domain Adversarial Feature Learning for Sketch Re-identification} merupakan penelitian yang pertama kali menggunakan gambar sketsa sebagai input dari model re-identifikasi manusia, namun dari model yang digunakan sendiri merupakan model yang telah di optimisasi untuk melakukan pengambilan informasi dari sketsa, seperti Triplet SN dan model GN Siamese yang merupakan gabungan dari dua cabang dari model GoogleNet yang dioptimisasi dengan menggunakan pairwise verification loss.
+    \vspace{1ex}
+    
+    \par Dapat dilihat dari penelitian-penelitian terkait diatas, selain pada penelitian \textit{Cross-Domain Adversarial Feature Learning for Sketch Re-identification}, hal yang difokuskan adalah metode re-identifikasi pada gambar orang riil yang tertangkap pada CCTV menggunakan gambar lain dari individu tersebut. Sedangkan pada penelitian yang kami usulkan pada Tugas Akhir ini adalah untuk melakukan re-identifikasi pada gambar orang riil yang tertangkap pada CCTV menggunakan gambar sketsa \textit{full body}  sebagai \textit{input}.
+    Selain itu penelitian yang dilakukan menggunakan model lightweight classical seperti ResNet, yang bukan merupakan fokus dari penelitian terakhir.
+
+\end{enumerate}
+\vspace{1ex}
