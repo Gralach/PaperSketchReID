@@ -1,0 +1,43 @@
+\chapter{KESIMPULAN DAN SARAN}
+\label{chap:penutup}
+
+% Ubah bagian-bagian berikut dengan isi dari penutup
+
+\section{Kesimpulan}
+\label{sec:kesimpulan}
+
+Berdasarkan hasil pengujian yang telah dilakukan dapat ditarik beberapa kesimpulan sebagai berikut:
+
+\begin{enumerate}[nolistsep]
+
+  \item Dikarenakan sketsa \textit{full-body} yang digunakan tidak memiliki warna, dilakukan dua percobaan untuk membantu model melakukan re-identifikasi,yaitu dengan CycleGAN dan Local Binary Pattern. Dengan menghasilkan citra sintesis dari input citra sketsa, CycleGAN meningkatkan Rank-1 \textit{accuracy} dan mAP dari model. Namun percobaan dengan {Local Binary Pattern} yang bertujuan untuk mengambil fitur tekstur dari input sketsa menyebabkan performa dari model menurun di semua metrik sehingga tidak direkomendasikan untuk digunakan.
+  
+  \item Untuk mengatasi kurangnya data pada PKU Sketch Re-ID, \textit{pre-training} pada dataset Market-1501 dapat meningkatkan semua metrik evaluasi dikarenakan model dapat mempelajari fitur-fitur yang terdapat pada dataset Market 1501 yang memiliki jauh lebih banyak data dibandingkan pada PKU Sketch Re-ID.
+  
+  \item Penggunaan \textit{Fully Connected Layer} sebesar 512 merupakan yang terbaik, apabila menggunakan \textit{Fully Connected Layer} yang lebih besar dari 512 maka akan terjadi overfitting. Namun apabila menggunakan \textit{Fully Connected Layer} dibawah 512, maka tidak se-optimal 512 layer. 
+  
+  \item Penggunaan \textit{Random Erasing} membuat performa model tidak konsisten, dari studi ablasi yang dilakukan lebih baik apabila tidak menggunakan \textit{Random Erasing}.
+  
+  \item Model yang digunakan memiliki kecepatan re-identifikasi 5 kali lebih cepat dan metrik evaluasi yang lebih baik dari DenseNet, sebuah model klasikal yang memiliki parameter lebih banyak 4 kali lipat dari ResNet CIFAR10, dan Triplet SN, sebuah model yang dibuat dari tiga model Sketch-a-Nets dan di optimisasikan dengan triplet loss.
+
+  \item Meskipun bukan merupakan model yang terbaik, model mampu mendapatkan informasi dengan jauh lebih efisien dibandingkan model-model lain. Bahkan model ensemble, model yang paling berat pada penelitian ini, memiliki kecepatan 3 kali lebih cepat dibandingkan model DenseNet dan TripletSN.
+  
+
+\end{enumerate}
+
+\section{Saran}
+\label{chap:saran}
+
+Untuk pengembangan lebih lanjut pada Tugas Akhir ini, terdapat beberapa saran yang dapat dilakukan, yakni sebagai berikut: 
+
+\begin{enumerate}[nolistsep]
+
+  \item Apabila dataset yang digunakan lebih pemasangan sketch dengan dataset membutuhkan kekuatan komputasi yang lebih besar sehingga tidak disarankan untuk menggunakan CycleGAN.
+  
+  \item Penggunaan Cross Domain Adversarial Learning untuk menjembatani perbedaan modalitas antara citra sketsa dengan citra CCTV.
+
+  \item Apabila pada dataset  terdapat lebih banyak data maka \textit{pre-training} pada dataset Market 1501 tidak perlu dilakukan.
+
+  \item Melakukan studi ablasi lebih lanjut dengan melakukan perubahan pada ukuran citra input, Random Rotation, dan Batch Size.
+
+\end{enumerate}
