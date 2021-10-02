@@ -1,10 +1,11 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Design and Implementation}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Lightweight Convolutional Neural Network}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{PKU Sketch Re-ID Dataset}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Cross Domain Image-to-Image Translation}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Training and Testing Process}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Results}{}% 7
-\BOOKMARK [1][-]{section.4}{Comparison}{}% 8
-\BOOKMARK [1][-]{section.5}{Conclusion}{}% 9
-\BOOKMARK [1][-]{section*.9}{References}{}% 10
+\BOOKMARK [1][-]{section.1}{I Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{II Design and Implementation}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{II-A Lightweight Convolutional Neural Network}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{II-B PKU Sketch Re-ID Dataset}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{II-C Cross Domain Image-to-Image Translation}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{II-D Training and Testing Process}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{II-E Ablation Study}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{III Results}{}% 8
+\BOOKMARK [1][-]{section.4}{IV Comparison}{}% 9
+\BOOKMARK [1][-]{section.5}{V Conclusion}{}% 10
+\BOOKMARK [1][-]{section*.15}{References}{}% 11
